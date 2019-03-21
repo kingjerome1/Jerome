@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--alt + shift + F自動排版-->
+<!-- ! tab 會出現-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天選之人的網站</title>
+    <!--bootstrap 和 h3字型-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <header class="header-class d-flex justify-content-center align-items-center">
+        <div class="text-center text-white">
+            <div>
+                <!--放logo<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">-->
+                <h1>Welcome to Jerome's space</h1>
+                <h2 style="font-family:標楷體">天選之人網頁</h2>
+
+                <div class="mt-4">
+                    <!--btn btn-outline-info , 加#id 跳到下面-->
+                    <a href="#navbarSupportedContent" class="btn btn-outline-light">Get started</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--最後一個才是改顏色-->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: rgba(0,0,0, .2);">
+        <a class="navbar-brand" href="#">Jerome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#About_me_bar">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Certification_row">Certification</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact me
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.facebook.com/Jerome60229" target="blank"><span class="outer">Facebook</span></a>
+                        <a class="dropdown-item" href="https://www.instagram.com/jerome60229/" target="blank">Instagram</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://github.com/kingjerome1" target="blank">Github</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!--上下各隔一點空間-->
+    <section class="py-5">
+        <!--container-fluid是接近滿版-->
+        <div class="container" id="About_me_bar">
+            <h2 class="text-center">About me</h2>
+            <p class="text-center">簡潔扼要的自我介紹</p>
+
+            <!--總欄是12-->
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/Jerome.JPG" alt="廖士豪的空中漫步" vspace="150">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center">貫徹始終，莫忘初衷</h3>
+                    <p style="letter-spacing:3px;line-height:30px;padding-left: 20px;padding-top: 20px;">
+                        大家好，我是廖士豪 <br />
+                        大學畢業於國立中正大學資訊管理系 <br />
+                        研究所就讀於國立中正大學資訊管理所 <br />
+                        平常的興趣是閱讀技術文章，以追隨目前主流趨勢<br />
+                        休閒活動是和家人一起去跑馬拉松，並有兩次21公里完賽紀錄<br />
+                        因此我的座右銘為：<b>永遠跟自己賽跑</b><br />
+                        <br />
+                        以下為過去的成就：<br />
+                        1.105年8月考取Oracle Java SE7的程式設計師證照OCAJP<br />
+                        2.106年5月中正資訊管理系專題全系第一<br />
+                        3.106年7月於楠梓加工區的華致資訊公司實習，擔任ERP中MM模組小小顧問<br />
+                        4.106年9月資訊管理碩碩士推甄正取第一<br />
+                        5.107年7月於新竹科學園區的創意電子公司實習，撰寫VBA程式並簡化流程、提升效率<br />
+                        6.107年10月獲得中正大學校長成績優異獎<br />
+                        7.預計於108年5月考取巨量分析師 - iPAS經濟部產業人才能力鑑定<br />
+                        8.預計於108年6月論文刊登於美洲學術大型期刊AMCIS
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-attachment bg-cover"
+        style="background-image:url(https://images.unsplash.com/photo-1550164682-2927e311a4fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
+        <!--container-fluid是接近滿版-->
+        <div class="container" id="Certification_row">
+            <h2 class="text-center">Certification</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex">
+                <i class="fab fa-facebook-square">
+                </i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div id="Certification" class="row">
+        <div class="col-md-4 container">
+            <img class="img-fluid" src="img/OCPJP.JPG" alt="OCPJP">            
+        </div>
+        <div class="col-md-4 container">
+            <img class="img-fluid" src="img/Skywalk.jpg" alt="Skywalk">
+        </div>
+        <div class="col-md-4 container">
+            <img class="img-fluid" src="img/infofab.PNG" alt="infofab">
+        </div>
+    </div>
+    <div id="Certification" class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" src="img/GUC.JPG" alt="GUC">            
+        </div>
+        <div class="col-md-4 container">
+            <img class="img-fluid" src="img/marathon21KM.jpg" alt="21KM">
+        </div>
+        <div class="col-md-4 container">
+            <img class="img-fluid" src="img/Principal award.JPG" alt="Principal award">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--justify-content是水平 align-items是垂直-->
+    <div class="footer d-flex justify-content-center align-items-center">
+      <div>
+        <h5 class="text-center">&copy;2019 Jerome. All rights reserved.</h5>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
