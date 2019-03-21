@@ -23,7 +23,7 @@
                 <!--放logo<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">-->
                 <h1>Welcome to Jerome's space</h1>
                 <h2 style="font-family:標楷體">天選之人網頁</h2>
-
+                <!--mt-4 在bootstrap Doc 裡面的 Utilities Spacing中-->
                 <div class="mt-4">
                     <!--btn btn-outline-info , 加#id 跳到下面-->
                     <a href="#navbarSupportedContent" class="btn btn-outline-light">Get started</a>
@@ -54,8 +54,10 @@
                         Contact me
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://www.facebook.com/Jerome60229" target="blank"><span class="outer">Facebook</span></a>
-                        <a class="dropdown-item" href="https://www.instagram.com/jerome60229/" target="blank">Instagram</a>
+                        <a class="dropdown-item" href="https://www.facebook.com/Jerome60229" target="blank"><span
+                                class="outer">Facebook</span></a>
+                        <a class="dropdown-item" href="https://www.instagram.com/jerome60229/"
+                            target="blank">Instagram</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="https://github.com/kingjerome1" target="blank">Github</a>
                     </div>
@@ -64,14 +66,14 @@
 
         </div>
     </nav>
-    <!--上下各隔一點空間-->
+    <!--py-5：上下各隔一點空間https://getbootstrap.com/docs/4.3/utilities/spacing/-->
     <section class="py-5">
         <!--container-fluid是接近滿版-->
         <div class="container" id="About_me_bar">
             <h2 class="text-center">About me</h2>
             <p class="text-center">簡潔扼要的自我介紹</p>
 
-            <!--總欄是12-->
+            <!--總欄是12 所以各半就是6 -->
             <div class="row">
                 <div class="col-md-6">
                     <img class="img-fluid" src="img/Jerome.JPG" alt="廖士豪的空中漫步" vspace="150">
@@ -106,35 +108,37 @@
         <!--container-fluid是接近滿版-->
         <div class="container" id="Certification_row">
             <h2 class="text-center">Certification</h2>
-        <div class="row">
-            <div class="col-md-4 d-flex">
-                <i class="fab fa-facebook-square">
-                </i>
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <i class="fab fa-facebook-square">
+                    </i>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
-    <div id="Certification" class="row">
-        <div class="col-md-4 container">
-            <img class="img-fluid" src="img/OCPJP.JPG" alt="OCPJP">            
+    <div class="container">
+        <div id="Certification" class="row">
+            <div class="col-md-4 container">
+                <img class="img-fluid" src="img/OCPJP.JPG" alt="OCPJP">
+            </div>
+            <div class="col-md-4 container">
+                <img class="img-fluid" src="img/Skywalk.jpg" alt="Skywalk">
+            </div>
+            <div class="col-md-4 container">
+                <img class="img-fluid" src="img/infofab.PNG" alt="infofab">
+            </div>
         </div>
-        <div class="col-md-4 container">
-            <img class="img-fluid" src="img/Skywalk.jpg" alt="Skywalk">
-        </div>
-        <div class="col-md-4 container">
-            <img class="img-fluid" src="img/infofab.PNG" alt="infofab">
-        </div>
-    </div>
-    <div id="Certification" class="row">
-        <div class="col-md-4">
-            <img class="img-fluid" src="img/GUC.JPG" alt="GUC">            
-        </div>
-        <div class="col-md-4 container">
-            <img class="img-fluid" src="img/marathon21KM.jpg" alt="21KM">
-        </div>
-        <div class="col-md-4 container">
-            <img class="img-fluid" src="img/Principal award.JPG" alt="Principal award">
+        <div id="Certification" class="row">
+            <div class="col-md-4 container">
+                <img class="img-fluid" src="img/GUC.JPG" alt="GUC">
+            </div>
+            <div class="col-md-4 container">
+                <img class="img-fluid" src="img/marathon21KM.jpg" alt="21KM">
+            </div>
+            <div class="col-md-4 container">
+                <img class="img-fluid" src="img/Principal award.JPG" alt="Principal award">
+            </div>
         </div>
     </div>
     <br>
@@ -145,9 +149,9 @@
 
     <!--justify-content是水平 align-items是垂直-->
     <div class="footer d-flex justify-content-center align-items-center">
-      <div>
-        <h5 class="text-center">&copy;2019 Jerome. All rights reserved.</h5>
-      </div>
+        <div>
+            <h5 class="text-center">&copy;2019 Jerome. All rights reserved.</h5>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
