@@ -11,6 +11,8 @@
     <!--bootstrap 和 h3字型-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" 
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -32,7 +34,7 @@
             </div>
         </div>
     </header>
-    <!--最後一個才是改顏色-->
+    <!--最後一個才是改顏色 navbar來源：https://getbootstrap.com/docs/4.3/components/navbar/-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: rgba(0,0,0, .2);">
         <a class="navbar-brand" href="#">Jerome</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -76,7 +78,7 @@
             <!--總欄是12 所以各半就是6 -->
             <div class="row">
                 <div class="col-md-6">
-                    <img class="img-fluid" src="img/Jerome.JPG" alt="廖士豪的空中漫步" vspace="150">
+                    <img class="img-fluid" src="img/Jerome.JPG" title="一生一定要體會一次的空中漫步" alt="廖士豪的空中漫步" vspace="150">
                 </div>
                 <div class="col-md-6">
                     <h3 class="text-center">貫徹始終，莫忘初衷</h3>
@@ -92,7 +94,7 @@
                         1.105年8月考取Oracle Java SE7的程式設計師證照OCAJP<br />
                         2.106年5月中正資訊管理系專題全系第一<br />
                         3.106年7月於楠梓加工區的華致資訊公司實習，擔任ERP中MM模組小小顧問<br />
-                        4.106年9月資訊管理碩碩士推甄正取第一<br />
+                        4.106年9月資訊管理所碩士推甄正取第一<br />
                         5.107年7月於新竹科學園區的創意電子公司實習，撰寫VBA程式並簡化流程、提升效率<br />
                         6.107年10月獲得中正大學校長成績優異獎<br />
                         7.預計於108年5月考取巨量分析師 - iPAS經濟部產業人才能力鑑定<br />
@@ -108,36 +110,31 @@
         <!--container-fluid是接近滿版-->
         <div class="container" id="Certification_row">
             <h2 class="text-center">Certification</h2>
-            <div class="row">
-                <div class="col-md-4 d-flex">
-                    <i class="fab fa-facebook-square">
-                    </i>
-                </div>
-            </div>
         </div>
     </section>
 
+    <!--加入container可以解決下方滾輪 還能讓東西都保持在範圍內!-->
     <div class="container">
         <div id="Certification" class="row">
             <div class="col-md-4 container">
-                <img class="img-fluid" src="img/OCPJP.JPG" alt="OCPJP">
+                <img class="img-fluid" src="img/OCPJP.JPG" title="Java證照" alt="OCPJP">
             </div>
             <div class="col-md-4 container">
-                <img class="img-fluid" src="img/Skywalk.jpg" alt="Skywalk">
+                <img class="img-fluid" src="img/Skywalk.jpg" title="空中漫步證書" alt="Skywalk">
             </div>
             <div class="col-md-4 container">
-                <img class="img-fluid" src="img/infofab.PNG" alt="infofab">
+                <img class="img-fluid" src="img/infofab.PNG" title="華致實習結業證書" alt="infofab">
             </div>
         </div>
         <div id="Certification" class="row">
             <div class="col-md-4 container">
-                <img class="img-fluid" src="img/GUC.JPG" alt="GUC">
+                <img class="img-fluid" src="img/GUC.JPG" title="創意電子實習結業證書" alt="GUC">
             </div>
             <div class="col-md-4 container">
-                <img class="img-fluid" src="img/marathon21KM.jpg" alt="21KM">
+                <img class="img-fluid" src="img/marathon21KM.jpg" title="馬拉松21公里完賽證明" alt="21KM">
             </div>
             <div class="col-md-4 container">
-                <img class="img-fluid" src="img/Principal award.JPG" alt="Principal award">
+                <img class="img-fluid" src="img/Principal award.JPG" title="中正大學校長獎" alt="Principal award">
             </div>
         </div>
     </div>
@@ -150,6 +147,18 @@
     <!--justify-content是水平 align-items是垂直-->
     <div class="footer d-flex justify-content-center align-items-center">
         <div>
+            <!--在結尾可以加的icon-->
+            <div class="footer-icon">
+            <a href="https://www.facebook.com/Jerome60229" traget="blank">
+                <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/jerome60229/" traget="blank" id="margin">
+                <i class="fab fa-instagram fa-3x"></i>
+            </a>
+            <a href="https://github.com/kingjerome1" target="blank" id="margin">
+                <i class="fab fa-github fa-3x"></i>
+            </a>
+            </div>
             <h5 class="text-center">&copy;2019 Jerome. All rights reserved.</h5>
         </div>
     </div>
